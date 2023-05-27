@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Descargar archivo PDF</title>
+  <title>CV</title>
+  <link rel="icon" type="image/png" href="/react-logo.png" />
   <script>
     window.onload = function() {
       setTimeout(function() {
         var link = document.createElement('a');
         link.href = 'TEST.pdf'; 
-        link.download = 'cv.gonza.gr TEST';
+        link.download = 'CV';
         link.click();
         setTimeout(function() {
           window.close();
-        }, 3000); 
-      }, 2000); 
+        }, 6000); 
+      }, 3000); 
     };
   </script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Bienvenido</h1>
-  <p>La página se cerrará automáticamente después de un segundo.</p>
+  <h1>Thanks for your interest in my CV!</h1>
+  <p>The download will start soon and then this window will close automatically</p>
 </body>
 </html>
