@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Descargar archivo PDF</title>
   <script>
     window.onload = function() {
-      var link = document.createElement('a');
-      link.href = 'TEST.pdf'; 
-      link.download = 'cv.gonza.gr TEST';
-      link.click();
-      window.close();
+      setTimeout(function() {
+        var link = document.createElement('a');
+        link.href = 'TEST.pdf'; 
+        link.download = 'cv.gonza.gr TEST';
+        link.click();
+        setTimeout(function() {
+          window.close();
+        }, 3000); 
+      }, 2000); 
     };
   </script>
 </head>
 <body>
+  <h1>Bienvenido</h1>
+  <p>La página se cerrará automáticamente después de un segundo.</p>
 </body>
 </html>
